@@ -9,11 +9,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Accounts extends BaseEntity {
+
     @Column(name="customer_id")
     private Long customerId;
 
     @Id
-    private String accountNumber;
+    private long accountNumber;
 
     private String accountType;
 
